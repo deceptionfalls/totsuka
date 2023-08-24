@@ -1,6 +1,6 @@
 # Totsuka
 
-![image](https://github.com/tsukki9696/totsuka/assets/127806743/e4b0275a-577e-41c5-a107-7184b0528f30)
+![image](https://github.com/tsukki9696/totsuka/assets/127806743/7cd4ef80-23e9-4980-be3d-74dfd10d9cca)
 
 ---
 
