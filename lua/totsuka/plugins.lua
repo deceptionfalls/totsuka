@@ -1,21 +1,16 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
+
+   ----------------
+    -- Functionality
+    ----------------
 
     -- Telescope
 	use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	  requires = { {'nvim-lua/plenary.nvim'} }
-	}
-
-	-- Colorscheme, the worst of all time
-	use {
-	  'nyoom-engineering/oxocarbon.nvim',
-	  config = function()
-	  	vim.cmd("colorscheme oxocarbon")
-	  end
 	}
 
 	-- Treesitter
@@ -29,6 +24,10 @@ return require('packer').startup(function(use)
 
 	-- Git integration
 	use 'tpope/vim-fugitive'
+
+    -- Sensible closings
+    use 'tpope/vim-endwise'
+    use 'rstacruz/vim-closer'
 
 	-- LSP
 	use {
@@ -47,15 +46,6 @@ return require('packer').startup(function(use)
 	  }
 	}
 
-    -- Zen mode
-    use 'folke/zen-mode.nvim'
-    use 'folke/twilight.nvim'
-
-    -- Toggleterm
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-      require("toggleterm").setup()
-    end}
-
     -- Comment.nvim
     use {
       'numToStr/Comment.nvim',
@@ -64,7 +54,37 @@ return require('packer').startup(function(use)
       end
     }
 
-    -- Colorizer for hex code previews
-    use 'norcalli/nvim-colorizer.lua'
+    -- null-ls
+    use "jose-elias-alvarez/null-ls.nvim"
+
+    -- Which-key
+    use {
+      "folke/which-key.nvim",
+      config = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
+        require("which-key").setup {
+            icons = {
+                    group      = '+',
+                    breadcrumb = '=',
+                    separator  = '->',
+            },
+        }
+      end
+    }
+    --------
+    -- UI --
+    --------
+
+    -- Statusline
+    -- I wanted not to, but the default statusline infuriates me
+	use 'echasnovski/mini.statusline'
+
+	-- Colorscheme, the worst of all time
+	use 'nyoom-engineering/oxocarbon.nvim'
+
+    -- Zen mode
+    use 'folke/zen-mode.nvim'
+    use 'folke/twilight.nvim'
 
 end)
