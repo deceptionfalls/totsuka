@@ -1,4 +1,7 @@
 # Totsuka
+
+![image](https://github.com/tsukki9696/totsuka/assets/127806743/e4b0275a-577e-41c5-a107-7184b0528f30)
+
 ---
 
 Opinionated, no-bullshit, personal Neovim config made for my needs, but should be as well usable for other people. I made this for myself so I could code better, this is my best and most minimal Neovim config to date, because I am tired of over-complex frameworks.
