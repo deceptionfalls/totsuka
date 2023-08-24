@@ -14,6 +14,7 @@ Powered by Packer.
 
 - `ripgrep`
 - `packer`
+- `black`
 
 ---
 
@@ -27,9 +28,12 @@ Powered by Packer.
 - Fugitive
 - Zen-mode.nvim
 - Twilight.nvim
-- Colorizer.nvim
-- Toggleterm
-- Oxocarbon
+- vim-endwise
+- vim-closer
+- which-key
+- null-ls
+- Oxocarbon colorscheme
+- mini.statusline
 
 ---
 
