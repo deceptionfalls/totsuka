@@ -25,9 +25,8 @@ return require('packer').startup(function(use)
 	-- Git integration
 	use 'tpope/vim-fugitive'
 
-    -- Sensible closings
-    use 'tpope/vim-endwise'
-    use 'rstacruz/vim-closer'
+    -- Smart brackets and quotes
+    use 'Raimondi/delimitMate'
 
 	-- LSP
 	use {
@@ -53,38 +52,4 @@ return require('packer').startup(function(use)
           require('Comment').setup()
       end
     }
-
-    -- null-ls
-    use "jose-elias-alvarez/null-ls.nvim"
-
-    -- Which-key
-    use {
-      "folke/which-key.nvim",
-      config = function()
-        vim.o.timeout = true
-        vim.o.timeoutlen = 300
-        require("which-key").setup {
-            icons = {
-                    group      = '+',
-                    breadcrumb = '=',
-                    separator  = '->',
-            },
-        }
-      end
-    }
-    --------
-    -- UI --
-    --------
-
-    -- Statusline
-    -- I wanted not to, but the default statusline infuriates me
-	use 'echasnovski/mini.statusline'
-
-	-- Colorscheme, the worst of all time
-	use 'nyoom-engineering/oxocarbon.nvim'
-
-    -- Zen mode
-    use 'folke/zen-mode.nvim'
-    use 'folke/twilight.nvim'
-
 end)

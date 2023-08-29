@@ -33,4 +33,4 @@ vim.opt.smartcase = true
 
 vim.opt.updatetime = 50
 
-vim.g.mapleader	= ' ' -- leader key as space
+vim.g.mapleader	= ' '
