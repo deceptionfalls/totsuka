@@ -1,4 +1,4 @@
-# Totsuka
+<img src='totsuka-logo.png'>
 
 ![image](https://github.com/tsukki9696/totsuka/assets/127806743/ca87fe8c-8278-410f-b109-ae9bd5d9c34a)
 
