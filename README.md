@@ -12,7 +12,7 @@ Totsuka comes with **only 16 plugins!** Most of these are extremely important **
 
 - `ripgrep`
 - `packer`
-- `black` (optional)
+- [`python-black-git`](https://github.com/psf/black) (optional)
 
 # Keybinds
 
