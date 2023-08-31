@@ -29,7 +29,7 @@ vim.keymap.set({'n', 'v'}, '<C-d>', '<C-d>zz')
 vim.keymap.set({'n', 'v'}, '<C-u>', '<C-u>zz')
 
 -- Good paste that doesnt forget shit
-vim.keymap.set('x', '<leader>p', '\"_dP')
+vim.keymap.set('x', '<C-P>', '\"_dP')
 
 -- Chmod +x without leaving document
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
