@@ -71,8 +71,8 @@ Totsuka does not come with `which-key` by default, so here's a rundown of the ke
 |-------------|--------------------------------------|
 | `<leader>pf` | Fuzzy find files                    |
 | `<leader>ps` | Grep from files                     |
+| `<leader>pg` | Fuzzy find git files                |
 | `<leader>vh` | View Help tags                      |
-| `<C-p>`     | Fuzzy find git files                |
 
 #### Undotree
 | Keybind     | Description                          |
