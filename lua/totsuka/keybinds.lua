@@ -6,8 +6,8 @@ vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 
 -- Get to end and beginning of line
-vim.keymap.set('n', '<leader>h', '0')
-vim.keymap.set('n', '<leader>l', '$')
+vim.keymap.set({'n', 'v'}, '<leader>h', '0')
+vim.keymap.set({'n', 'v'}, '<leader>l', '$')
 
 -- :noh for searches
 vim.keymap.set('n', '<leader>hh', ':noh<CR>', { silent = true })
@@ -25,8 +25,8 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('n', 'J', "mzJ`z")
 
 -- Non-disorienting jumping to the middle of a document
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set({'n', 'v'}, '<C-d>', '<C-d>zz')
+vim.keymap.set({'n', 'v'}, '<C-u>', '<C-u>zz')
 
 -- Good paste that doesnt forget shit
 vim.keymap.set('x', '<leader>p', '\"_dP')
