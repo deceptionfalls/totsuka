@@ -35,6 +35,8 @@ Totsuka does not come with `which-key` by default, so here's a rundown of the ke
 | (Visual Mode) `J` | Move visual block down              |
 | `<C-d>`      | Jump down but maintain cursor in the middle |
 | `<C-u>`      | Jump up but maintain cursor in the middle   |
+| `<C-h>`, `<C-l>`      | Navigate horizontally between splits |
+| `<C-j>` `<C-k>`     | Navigate vertically between splits |
 
 #### LSP
 | Keybind     | Description                          |
