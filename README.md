@@ -14,6 +14,37 @@ Totsuka comes with **only 16 plugins!** Most of these are extremely important **
 - `packer`
 - [`python-black-git`](https://github.com/psf/black) (optional)
 
+# File Structure
+
+Totsuka follows the following structure:
+
+```
+├── after
+│  └── plugin
+│     ├── black.lua
+│     ├── fugitive.lua
+│     ├── harpoon.lua
+│     ├── telescope.lua
+│     ├── treesitter.lua
+│     └── undotree.lua
+├── colors
+├── lua
+│  └── totsuka
+│     ├── init.lua
+│     ├── keybinds.lua
+│     ├── lsp.lua
+│     ├── options.lua
+│     └── plugins.lua
+├── init.lua
+```
+
+- `after/plugin`, plugin specific configuration
+- `colors`, custom colorschemes (if any)
+- `lua/totsuka`, options, keybinds, lsp configs, plugin list
+- `init.lua` where everything gets referenced
+
+You should mostly mess around `after` where your plugin config goes and `lua` where everything else goes.
+
 # Keybinds
 
 Totsuka does not come with `which-key` by default, so here's a rundown of the keybinds.

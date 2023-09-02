@@ -24,13 +24,14 @@ vim.opt.ru = false
 vim.opt.showcmd = false
 vim.opt.showmode = false
 vim.opt.laststatus = 0
-vim.opt.cmdheight = 0
+-- vim.opt.cmdheight = 0
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
 
 vim.g.mapleader	= ' '
