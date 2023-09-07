@@ -1,9 +1,13 @@
 -- Fuck filetree plugins, netrw is my new best friend
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
+-- Treat linebreaks as individual lines, not essential, but convenient for READMEs
+vim.keymap.set({'n', 'v'}, 'j', 'gj')
+vim.keymap.set({'n', 'v'}, 'k', 'gk')
+
 -- Save and quit
-vim.keymap.set('n', '<leader>w', ':w<CR>')
-vim.keymap.set('n', '<leader>q', ':q<CR>')
+vim.keymap.set('n', '<leader>w', ':w!<CR>')
+vim.keymap.set('n', '<leader>q', ':q!<CR>')
 
 -- Get to end and beginning of line
 vim.keymap.set({'n', 'v'}, '<leader>h', '0')
@@ -35,7 +39,7 @@ vim.keymap.set({'n', 'v'}, '<C-d>', '<C-d>zz')
 vim.keymap.set({'n', 'v'}, '<C-u>', '<C-u>zz')
 
 -- Good paste that doesnt forget shit
-vim.keymap.set('x', '<C-P>', '\"_dP')
+vim.keymap.set('x', '<leader>p', '\"_dP')
 
 -- Chmod +x without leaving document
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

@@ -24,7 +24,7 @@ vim.opt.ru = false
 vim.opt.showcmd = false
 vim.opt.showmode = false
 vim.opt.laststatus = 0
--- vim.opt.cmdheight = 0
+vim.opt.cmdheight = 0
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
