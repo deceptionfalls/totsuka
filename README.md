@@ -1,8 +1,8 @@
-<img src='totsuka-logo.png'>
-
-![image](https://github.com/tsukki9696/totsuka/assets/127806743/ca87fe8c-8278-410f-b109-ae9bd5d9c34a)
+<img src="totsuka-img.png">
 
 Opinionated, no-bullshit, personal Neovim config made for my needs, but should be usable for other people as well. Totsuka exists because I am tired of over-complex frameworks, and for my final and best attempt at configuring Neovim. Totsuka is focused on the base Vim experience, efficiency, simplicity and modularity, with as minimal plugins as possible, you are encouraged to remove and add as needed.
+
+> Totsuka has it's own custom colorscheme now! Say hello to the **Yata colorscheme**, inspired by a certain japanese regalia.
 
 # Plugins
 
