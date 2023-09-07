@@ -60,6 +60,8 @@ Totsuka does not come with `which-key` by default, so here's a rundown of the ke
 | `<leader>hh` | Clear highlight                         |
 | `<leader>so` | Source config                           |
 | `<leader>x`  | `chmod +x` current file                  |
+| `<leader>v`  | Vertical split                  |
+| `<leader>c`  | Horizontal split                  |
 | `<C-P>`  | Improved Paste                          |
 | `J`          | Improved Shift J                        |
 | (Visual Mode) `K` | Move visual block up                |
