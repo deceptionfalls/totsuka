@@ -24,6 +24,10 @@ vim.keymap.set('n', '<leader>so', ':so<CR>', { silent = true })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 
+-- Vertical and Horizontal splits
+vim.keymap.set('n', '<leader>v', '<C-w>v')
+vim.keymap.set('n', '<leader>c', '<C-w>s')
+
 -- Navigate between splits
 vim.keymap.set('n', '<C-h>', "<C-w>h")
 vim.keymap.set('n', '<C-l>', "<C-w>l")
