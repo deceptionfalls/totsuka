@@ -1,2 +1,2 @@
 require("totsuka")
-vim.cmd("colorscheme yata")
+vim.cmd("colorscheme oxocarbon")

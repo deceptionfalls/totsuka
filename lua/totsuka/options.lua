@@ -1,37 +1,47 @@
-vim.opt.clipboard = "unnamedplus"
-vim.opt.complete.opt = {'menu', 'menuone', 'noselect'}
-vim.opt.mouse = 'a'
+local c = vim.cmd
+local g = vim.g
+local o = vim.opt
 
-vim.opt.timeout = true
-vim.opt.timeoutlen = 300
+o.clipboard = "unnamedplus"
+o.complete.opt = {'menu', 'menuone', 'noselect'}
+o.mouse = 'a'
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+o.timeout = true
+o.timeoutlen = 300
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+o.tabstop = 4
+o.softtabstop = 4
+o.shiftwidth = 4
+o.expandtab = true
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = false
-vim.opt.termguicolors = true
-vim.opt.wrap = false
-vim.opt.ru = false
-vim.opt.showcmd = false
-vim.opt.showmode = false
-vim.opt.laststatus = 0
-vim.opt.cmdheight = 0
+o.swapfile = false
+o.backup = false
+o.undodir = os.getenv("HOME") .. "/.vim/undodir"
+o.undofile = true
 
-vim.opt.incsearch = true
-vim.opt.hlsearch = true
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.updatetime = 50
+o.number = true
+o.relativenumber = true
+o.cursorline = false
+o.termguicolors = true
+o.wrap = false
+o.ru = false
+o.showcmd = false
+o.showmode = false
+o.laststatus = 0
+o.cmdheight = 1
 
-vim.g.mapleader	= ' '
+o.incsearch = true
+o.hlsearch = true
+o.ignorecase = true
+o.smartcase = true
+o.scrolloff = 8
+o.signcolumn = "yes"
+o.updatetime = 50
+
+g.mapleader	= ' '
+g.netrw_browse_split = 0
+g.netrw_banner = 0
+g.netrw_winsize = 25
+
+-- Terminals don't have numbers or relative numbers
+c([[autocmd TermOpen * setlocal nonumber norelativenumber]])
