@@ -28,7 +28,7 @@ o.ru = false
 o.showcmd = false
 o.showmode = false
 o.laststatus = 0
-o.cmdheight = 1
+o.cmdheight = 0
 
 o.incsearch = true
 o.hlsearch = true
@@ -37,6 +37,8 @@ o.smartcase = true
 o.scrolloff = 8
 o.signcolumn = "yes"
 o.updatetime = 50
+
+o.shortmess='nocI' -- gets rid of annoying popups caused by cmdheight being on 0
 
 g.mapleader	= ' '
 g.netrw_browse_split = 0
