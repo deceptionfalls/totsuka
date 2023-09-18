@@ -16,6 +16,10 @@ k.set('n', '<leader>q', ':q!<CR>')
 k.set({'n', 'v'}, '<leader>h', '0')
 k.set({'n', 'v'}, '<leader>l', '$')
 
+-- Delete from current letter to beginning or end of line
+k.set({'n', 'v'}, 'dh', 'd0')
+k.set({'n', 'v'}, 'dl', 'd$')
+
 -- :noh for searches
 k.set('n', '<leader>hh', ':noh<CR>', { silent = true })
 
@@ -57,4 +61,4 @@ k.set('x', '<leader>p', '\"_dP')
 k.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Toggle line wrapping with Ctrl+R, useful for writing markdown
-a.nvim_set_keymap('n', '<C-r>', ':set wrap!<CR>', { noremap = true, silent = true })
+k.set('n', '<C-r>', ':set wrap!<CR>', { noremap = true, silent = true })
