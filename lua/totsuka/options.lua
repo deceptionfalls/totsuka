@@ -1,3 +1,4 @@
+local a = vim.api
 local c = vim.cmd
 local g = vim.g
 local o = vim.opt
@@ -47,3 +48,8 @@ g.netrw_winsize = 25
 
 -- Terminals don't have numbers or relative numbers
 c([[autocmd TermOpen * setlocal nonumber norelativenumber]])
+
+-- Italics on comments and keywords
+a.nvim_set_hl(0, "Comment", { italic = true })
+a.nvim_set_hl(0, "Function", { bold = true })
+a.nvim_set_hl(0, "Identifier", { bold = true })
