@@ -26,10 +26,10 @@ o.cursorline = false
 o.termguicolors = true
 o.wrap = false
 o.ru = false
-o.showcmd = false
+o.showcmd = true
 o.showmode = false
 o.laststatus = 0
-o.cmdheight = 0
+o.cmdheight = 1
 o.shortmess='nocI' -- gets rid of annoying popups caused by cmdheight being on 0
 
 o.incsearch = true
