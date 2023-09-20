@@ -30,6 +30,7 @@ o.showcmd = false
 o.showmode = false
 o.laststatus = 0
 o.cmdheight = 0
+o.shortmess='nocI' -- gets rid of annoying popups caused by cmdheight being on 0
 
 o.incsearch = true
 o.hlsearch = true
@@ -39,17 +40,17 @@ o.scrolloff = 8
 o.signcolumn = "yes"
 o.updatetime = 50
 
-o.shortmess='nocI' -- gets rid of annoying popups caused by cmdheight being on 0
-
 g.mapleader	= ' '
+
+g.netrw_keepdir = 0
 g.netrw_browse_split = 0
 g.netrw_banner = 0
 g.netrw_winsize = 25
+g.netrw_localcopydircmd = 'cp -r'
 
 -- Terminals don't have numbers or relative numbers
 c([[autocmd TermOpen * setlocal nonumber norelativenumber]])
 
 -- Italics on comments and keywords
-a.nvim_set_hl(0, "Comment", { italic = true })
 a.nvim_set_hl(0, "Function", { bold = true })
 a.nvim_set_hl(0, "Identifier", { bold = true })
