@@ -3,8 +3,6 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 lsp.ensure_installed({
-	'tsserver',
-	'eslint',
 	'pyright',
 })
 
@@ -31,10 +29,6 @@ lsp.on_attach(function(client, bufnr)
   k.set("n", "K", function() vim.lsp.buf.hover() end, opts)
   k.set("n", "[d", function() vim.lsp.buf.goto_next() end, opts)
   k.set("n", "]d", function() vim.lsp.buf.goto_prev() end, opts)
-  k.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-  k.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-  k.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-  k.set("n", "<leader>vrh", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
 lsp.setup()

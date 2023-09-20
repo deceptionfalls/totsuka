@@ -1,8 +1,10 @@
 local k = vim.keymap
 local a = vim.api
 
--- Fuck filetree plugins, netrw is my new best friend
-k.set("n", "<leader>e", vim.cmd.Ex, { silent = true })
+-- Ex for full buffer file explorer
+-- Lexplore for a sideview file explorer akin to NERDTree
+-- k.set("n", "<leader>e", vim.cmd.Ex, { silent = true })
+k.set("n", "<leader>e", ':Lexplore<CR>', { silent = true })
 
 -- Treat linebreaks as individual lines, not essential, but convenient for READMEs
 k.set({'n', 'v'}, 'j', 'gj')
@@ -22,9 +24,6 @@ k.set({'n', 'v'}, 'dl', 'd$')
 
 -- :noh for searches
 k.set('n', '<leader>hh', ':noh<CR>', { silent = true })
-
--- Re-source config
-k.set('n', '<leader>so', ':so<CR>', { silent = true })
 
 -- FUCK moving stuff with alt
 -- (Visual Mode) Shift + K/J moves blocks of lines
@@ -53,9 +52,6 @@ k.set('n', 'J', "mzJ`z")
 -- Non-disorienting jumping to the middle of a document
 k.set({'n', 'v'}, '<C-d>', '<C-d>zz')
 k.set({'n', 'v'}, '<C-u>', '<C-u>zz')
-
--- Good paste that doesnt forget shit
-k.set('x', '<leader>p', '\"_dP')
 
 -- Chmod +x without leaving document
 k.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
