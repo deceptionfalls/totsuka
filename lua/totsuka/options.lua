@@ -26,11 +26,11 @@ o.cursorline = false
 o.termguicolors = true
 o.wrap = false
 o.ru = false
-o.showcmd = true
+o.showcmd = false
 o.showmode = false
 o.laststatus = 0
 o.cmdheight = 1
-o.shortmess='nocI' -- gets rid of annoying popups caused by cmdheight being on 0
+o.shortmess = 'aowOFCWstTAIcCqFS' -- go away annoying popus
 
 o.incsearch = true
 o.hlsearch = true
@@ -43,9 +43,11 @@ o.updatetime = 50
 g.mapleader	= ' '
 
 g.netrw_keepdir = 0
-g.netrw_browse_split = 0
+g.netrw_browse_split = 4
 g.netrw_banner = 0
-g.netrw_winsize = 25
+g.netrw_liststyle = 3
+g.netrw_winsize = 20
+g.netrw_altv = 1
 g.netrw_localcopydircmd = 'cp -r'
 
 -- Terminals don't have numbers or relative numbers
