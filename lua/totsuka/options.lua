@@ -50,9 +50,6 @@ g.netrw_winsize = 20
 g.netrw_altv = 1
 g.netrw_localcopydircmd = 'cp -r'
 
--- Terminals don't have numbers or relative numbers
-c([[autocmd TermOpen * setlocal nonumber norelativenumber]])
-
 -- Italics on comments and keywords
 a.nvim_set_hl(0, "Function", { bold = true })
 a.nvim_set_hl(0, "Identifier", { bold = true })
