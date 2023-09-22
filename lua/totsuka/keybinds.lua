@@ -34,6 +34,10 @@ k.set('v', 'J', ":m '>+1<CR>gv=gv")
 k.set('n', '<leader>s', '<C-w>s')
 k.set('n', '<leader>v', '<C-w>v')
 
+-- Go to next/previous buffer
+k.set('n', '<leader>bn', ':bnext<CR>')
+k.set('n', '<leader>bp', ':bprev<CR>')
+
 -- Terminals inside Neovim
 -- Not the best but for builtin, it's pretty good
 k.set('n', '<leader>ss', ':split term://zsh<CR>', { silent = true })
