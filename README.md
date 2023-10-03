@@ -23,7 +23,6 @@ Totsuka follows the following structure:
 │  └── plugin
 │     ├── black.lua
 │     ├── fugitive.lua
-│     ├── harpoon.lua
 │     ├── telescope.lua
 │     ├── treesitter.lua
 │     └── undotree.lua
@@ -58,7 +57,6 @@ Totsuka does not come with `which-key` by default, so here's a rundown of the ke
 | `<leader>h`  | Beginning of line                       |
 | `<leader>l`  | End of line                             |
 | `<leader>hh` | Clear highlight                         |
-| `<leader>so` | Source config                           |
 | `<leader>x`  | `chmod +x` current file                  |
 | `<leader>v`  | Vertical split                  |
 | `<leader>c`  | Horizontal split                  |
@@ -77,14 +75,11 @@ Totsuka does not come with `which-key` by default, so here's a rundown of the ke
 | `<leader>fm` | Format file using Black             |
 | `<C-k>`     | Select previous item                |
 | `<C-j>`     | Select next item                    |
-| `<C-y>`     | Confirm item                        |
+| `<CR>`     | Confirm item                        |
 | `gd`        | View definition                     |
 | `K`         | Hover definition                    |
 | `[d`        | Next LSP buffer                     |
 | `]d`        | Prev LSP buffer                     |
-| `<leader>vca` | Code actions                       |
-| `<leader>vrr` | LSP references                      |
-| `<leader>vrn` | Rename                             |
 
 #### Git
 | Keybind     | Description                          |
@@ -94,20 +89,13 @@ Totsuka does not come with `which-key` by default, so here's a rundown of the ke
 | `<leader>p`  | Push                                |
 | `<leader>t`  | Push setting the branch             |
 
-#### Harpoon
-| Keybind     | Description                          |
-|-------------|--------------------------------------|
-| `<leader>a`  | Mark current file                   |
-| `<C-e>`     | Toggle mark menu                    |
-| `<leader>1-4` | Jump to respective mark             |
-
 #### Telescope
 | Keybind     | Description                          |
 |-------------|--------------------------------------|
 | `<leader>pf` | Fuzzy find files                    |
 | `<leader>ps` | Grep from files                     |
 | `<leader>pg` | Fuzzy find git files                |
-| `<leader>vh` | View Help tags                      |
+| `<leader>pw` | View Buffers                      |
 
 #### Undotree
 | Keybind     | Description                          |
