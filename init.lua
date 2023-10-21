@@ -1,2 +1,3 @@
 require("totsuka")
-vim.cmd("colorscheme oxocarbon")
+require("plugin")
+vim.cmd("colorscheme vscode")
